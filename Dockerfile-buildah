@@ -1,0 +1,2 @@
+FROM centos:7
+RUN yum update -y && yum install -y buildah wget bzip2 gzip unzip zip
