@@ -13,3 +13,9 @@ Attempts to create a smaller base image using buildah.
 
 NOTE: the buildah images to not yet work. Use the Dokerfile approach for now.
 
+## Adding conda packages
+In your images that derrive from this you can install conda packages into the default env like this:
+```
+conda install --yes -c bioconda --prefix /root/miniconda nextflow
+```
+Adjust the channel name and the package name accordingly.
